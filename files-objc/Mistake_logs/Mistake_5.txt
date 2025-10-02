@@ -1,0 +1,56 @@
+FileListViewController.m:445:1: error: duplicate declaration of method 'openTextEditor:'
+- (void)openTextEditor:(FileItem *)fileItem {
+^
+FileListViewController.m:258:1: note: previous declaration is here
+- (void)openTextEditor:(FileItem *)fileItem {
+^
+FileListViewController.m:432:5: error: unknown type name 'ImageViewController'; did you mean 'UIPageViewController'?
+    ImageViewController *imageVC = [[ImageViewController alloc] init];
+    ^~~~~~~~~~~~~~~~~~~
+    UIPageViewController
+/var/jb/theos/sdks/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPageViewController.h:51:12: note: 'UIPageViewController' declared here
+@interface UIPageViewController : UIViewController {
+           ^
+FileListViewController.m:432:38: error: unknown receiver 'ImageViewController'; did you mean 'UIPageViewController'?
+    ImageViewController *imageVC = [[ImageViewController alloc] init];
+                                     ^~~~~~~~~~~~~~~~~~~
+                                     UIPageViewController
+/var/jb/theos/sdks/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPageViewController.h:51:12: note: 'UIPageViewController' declared here
+@interface UIPageViewController : UIViewController {
+           ^
+FileListViewController.m:433:13: error: property 'filePath' not found on object of type 'UIPageViewController *'
+    imageVC.filePath = fileItem.path;
+            ^
+FileListViewController.m:439:5: error: unknown type name 'PDFViewController'; did you mean 'UIViewController'?
+    PDFViewController *pdfVC = [[PDFViewController alloc] init];
+    ^~~~~~~~~~~~~~~~~
+    UIViewController
+/var/jb/theos/sdks/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrinterPickerController.h:16:54: note: 'UIViewController' declared here
+@class UIPrinterPickerController, UIPrinter, UIView, UIViewController, UIBarButtonItem;
+                                                     ^
+FileListViewController.m:439:34: error: unknown receiver 'PDFViewController'; did you mean 'UIViewController'?
+    PDFViewController *pdfVC = [[PDFViewController alloc] init];
+                                 ^~~~~~~~~~~~~~~~~
+                                 UIViewController
+/var/jb/theos/sdks/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrinterPickerController.h:16:54: note: 'UIViewController' declared here
+@class UIPrinterPickerController, UIPrinter, UIView, UIViewController, UIBarButtonItem;
+                                                     ^
+FileListViewController.m:440:11: error: property 'filePath' not found on object of type 'UIViewController *'
+    pdfVC.filePath = fileItem.path;
+          ^
+FileListViewController.m:504:44: error: no known class method for selector 'actionWithTitle:image:identifier:attributes:handler:'
+        UIAction *deleteAction = [UIAction actionWithTitle:@"删除" image:[UIImage systemImageNamed:@"trash"] identifier:nil attributes:UIMenuElementAttributesDestructive handler:^(__kindof UIAction * _Nonnull action) {
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FileListViewController.m:15:17: warning: method definition for 'openMediaPlayer:' not found [-Wincomplete-implementation]
+@implementation FileListViewController
+                ^
+./FileListViewController.h:28:1: note: method 'openMediaPlayer:' declared here
+- (void)openMediaPlayer:(FileItem *)fileItem;
+^
+FileListViewController.m:15:17: warning: method definition for 'openHexEditor:' not found [-Wincomplete-implementation]
+@implementation FileListViewController
+                ^
+./FileListViewController.h:29:1: note: method 'openHexEditor:' declared here
+- (void)openHexEditor:(FileItem *)fileItem;
+^
+2 warnings and 8 errors generated.

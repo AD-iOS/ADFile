@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- ==================== -->
+    <!-- 應用標識符 -->
+    <!-- ==================== -->
+    <key>application-identifier</key>
+    <string>com.sct.ad-files.ad</string>
+    
+    <!-- ==================== -->
+    <!-- 基礎安全與沙盒權限 -->
+    <!-- ==================== -->
+    
+    <!-- 無沙盒權限（越獄應用核心） -->
+    <key>com.apple.private.security.no-sandbox</key>
+    <true/>
+    
+    <!-- 無容器權限 -->
+    <key>com.apple.private.security.no-container</key>
+    <true/>
+    
+    <!-- 跳過庫驗證 -->
+    <key>com.apple.private.skip-library-validation</key>
+    <true/>
+    
+    <!-- 允許應用級API -->
+    <key>com.apple.private.allow-explicit-app-level-api</key>
+    <true/>
+    
+    <!-- ==================== -->
+    <!-- 文件系統完整訪問權限 -->
+    <!-- ==================== -->
+    
+    <!-- 根文件系統讀寫權限 -->
+    <key>com.apple.private.read-write-root-filesystem</key>
+    <true/>
+    
+    <!-- 絕對路徑文件讀寫權限 -->
+    <key>com.apple.security.exception.files.absolute-path.read-write</key>
+    <array>
+        <string>/</string>
+    </array>
+    
+    <!-- 用戶文件系統權限 -->
+    <key>com.apple.private.filesystems.userfs</key>
+    <true/>
+    
+    <!-- 應用數據存儲權限 -->
+    <key>com.apple.private.security.storage.AppData</key>
+    <true/>
+    <key>com.apple.private.security.storage.AppDataContainers</key>
+    <true/>
+    <key>com.apple.private.security.storage.AppBundles</key>
+    <true/>
+    <key>com.apple.private.security.storage.Photos</key>
+    <true/>
+    
+    <!-- 文件提供者擴展權限 -->
+    <key>com.apple.private.fileprovider</key>
+    <true/>
+    
+    <!-- 訪問所有文件系統 -->
+    <key>com.apple.private.filesystem.all</key>
+    <true/>
+    
+    <!-- ==================== -->
+    <!-- 進程與系統管理權限 -->
+    <!-- ==================== -->
+    
+    <!-- 任務端口權限（進程管理） -->
+    <key>com.apple.private.task-ports</key>
+    <true/>
+    
+    <!-- 內存管理權限 -->
+    <key>com.apple.private.memory-management</key>
+    <true/>
+    
+    <!-- 內存狀態監控 -->
+    <key>com.apple.private.memorystatus</key>
+    <true/>
+    
+    <!-- 內核擴展權限 -->
+    <key>com.apple.private.kernel.extensions</key>
+    <true/>
+    
+    <!-- 進程控制權限 -->
+    <key>com.apple.private.persona-mgmt</key>
+    <true/>
+    
+    <!-- 容器管理器權限 -->
+    <key>com.apple.private.security.container-manager</key>
+    <true/>
+    <key>com.apple.private.MobileContainerManager.allowed</key>
+    <true/>
+    
+    <!-- ==================== -->
+    <!-- 網絡與通信權限 -->
+    <!-- ==================== -->
+    
+    <!-- 網絡客戶端權限 -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+    
+    <!-- 網絡套接字代理權限 -->
+    <key>com.apple.private.network.socket-delegate</key>
+    <true/>
+    
+    <!-- ==================== -->
+    <!-- 隱私與系統服務權限 -->
+    <!-- ==================== -->
+    
+    <!-- TCC系統服務訪問權限 -->
+    <key>com.apple.private.tcc.allow</key>
+    <array>
+        <!-- 通訊錄 -->
+        <string>kTCCServiceAddressBook</string>
+        <!-- 照片庫 -->
+        <string>kTCCServicePhotos</string>
+        <!-- 媒體庫 -->
+        <string>kTCCServiceMediaLibrary</string>
+        <!-- 麥克風 -->
+        <string>kTCCServiceMicrophone</string>
+        <!-- 相機 -->
+        <string>kTCCServiceCamera</string>
+        <!-- 定位服務 -->
+        <string>kTCCServiceLocation</string>
+        <!-- 藍牙 -->
+        <string>kTCCServiceBluetooth</string>
+        <!-- 日曆 -->
+        <string>kTCCServiceCalendar</string>
+        <!-- 提醒事項 -->
+        <string>kTCCServiceReminders</string>
+        <!-- 運動與健身 -->
+        <string>kTCCServiceMotion</string>
+        <!-- 健康數據 -->
+        <string>kTCCServiceHealth</string>
+    </array>
+    
+    <!-- TCC管理器權限 -->
+    <key>com.apple.private.tcc.manager</key>
+    <true/>
+    
+    <!-- ==================== -->
+    <!-- 調試與開發權限 -->
+    <!-- ==================== -->
+    
+    <!-- 調試權限（重要） -->
+    <key>com.apple.security.get-task-allow</key>
+    <true/>
+    
+    <!-- 調試器權限 -->
+    <key>com.apple.private.cs.debugger</key>
+    <true/>
+    
+    <!-- 後台任務權限 -->
+    <key>com.apple.security.background-task</key>
+    <true/>
+    
+    <!-- ==================== -->
+    <!-- 應用間通信權限 -->
+    <!-- ==================== -->
+    
+    <!-- 應用組權限 -->
+    <key>com.apple.security.application-groups</key>
+    <array>
+        <string>group.com.sct.ad-files</string>
+    </array>
+    
+    <!-- ==================== -->
+    <!-- 系統配置權限 -->
+    <!-- ==================== -->
+    
+    <!-- 系統配置寫權限 -->
+    <key>com.apple.SystemConfiguration.SCDynamicStore-write-access</key>
+    <true/>
+    <key>com.apple.SystemConfiguration.SCPreferences-write-access</key>
+    <true/>
+    
+    <!-- ==================== -->
+    <!-- 多媒體權限 -->
+    <!-- ==================== -->
+    
+    <!-- 媒體流權限 -->
+    <key>com.apple.mediastream.mstreamd-access</key>
+    <true/>
+    
+    <!-- 受保護內容播放 -->
+    <key>com.apple.coremedia.allow-protected-content-playback</key>
+    <true/>
+    
+    <!-- 音頻解碼權限 -->
+    <key>com.apple.coreaudio.allow-amr-decode</key>
+    <true/>
+    <key>com.apple.coreaudio.allow-speex-codec</key>
+    <true/>
+    
+    <!-- 快門聲音控制 -->
+    <key>com.apple.avfoundation.allow-still-image-capture-shutter-sound-manipulation</key>
+    <true/>
+    
+    <!-- 音樂資產讀寫 -->
+    <key>com.apple.security.assets.music.read-write</key>
+    <true/>
+    
+    <!-- ==================== -->
+    <!-- 應用管理權限 -->
+    <!-- ==================== -->
+    
+    <!-- 移動安裝權限 -->
+    <key>com.apple.private.mobileinstall.allowedSPI</key>
+    <array>
+        <string>Install</string>
+        <string>Uninstall</string>
+        <string>UninstallForLaunchServices</string>
+        <string>SetCapabilities</string>
+        <string>Lookup</string>
+        <string>InstallForLaunchServices</string>
+        <string>CopyInstalledAppsForLaunchServices</string>
+        <string>UpdateSinfForLaunchServices</string>
+        <string>InstallLocalProvisioned</string>
+        <string>CopyDiskUsageForLaunchServices</string>
+        <string>CheckCapabilitiesMatch</string>
+        <string>Browse</string>
+    </array>
+    
+    <!-- 應用數據庫重建 -->
+    <key>com.apple.lsapplicationworkspace.rebuildappdatabases</key>
+    <true/>
+    
+    <!-- ==================== -->
+    <!-- 其他高級權限 -->
+    <!-- ==================== -->
+    
+    <!-- 平台應用權限 -->
+    <key>platform-application</key>
+    <true/>
+    
+    <!-- 多任務權限 -->
+    <key>com.apple.multitasking.systemappassertions</key>
+    <true/>
+    <key>com.apple.multitasking.termination</key>
+    <true/>
+    
+    <!-- 自動喚醒寫權限 -->
+    <key>com.apple.AutoWake-write-access</key>
+    <true/>
+    
+    <!-- 消息撰寫客戶端 -->
+    <key>com.apple.messages.composeclient</key>
+    <true/>
+    
+    <!-- 已刪除文件空間釋放 -->
+    <key>com.apple.mobile.deleted.AllowFreeSpace</key>
+    <true/>
+    
+    <!-- 核心服務映射權限 -->
+    <key>com.apple.private.coreservices.canmaplsdatabase</key>
+    <true/>
+    
+    <!-- IOKit用戶客戶端類 -->
+    <key>com.apple.security.iokit-user-client-class</key>
+    <array>
+        <string>IOSurfaceRootUserClient</string>
+        <string>AGXDeviceUserClient</string>
+    </array>
+    
+    <!-- 持久URL轉換 -->
+    <key>checklessPersistentURLTranslation</key>
+    <true/>
+    
+    <!-- iTunes存儲私有權限 -->
+    <key>com.apple.itunesstored.private</key>
+    <true/>
+    
+    <!-- 機器查找全局名稱 -->
+    <key>com.apple.security.exception.mach-lookup.global-name</key>
+    <array>
+        <string>com.sct-ad.files-ad.helper.xpc</string>
+        <string>com.apple.lsd.modifydb</string>
+        <string>com.apple.mediaartworkd.xpc</string>
+        <string>com.apple.coremedia</string>
+        <string>com.apple.medialibraryd.xpc</string>
+    </array>
+
+</dict>
+</plist>

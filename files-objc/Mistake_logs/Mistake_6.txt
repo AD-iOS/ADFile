@@ -1,0 +1,5 @@
+Undefined symbols for architecture arm64:
+  "_OBJC_CLASS_$_FileOperations", referenced from:
+      objc-class-ref in FileListViewController-1d4b66.o
+ld: symbol(s) not found for architecture arm64
+clang-16: error: linker command failed with exit code 1 (use -v to see invocation)

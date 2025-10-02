@@ -1,0 +1,18 @@
+FileListViewController.m:299:5: error: unknown type name 'SettingsViewController'; did you mean 'UIPageViewController'?
+    SettingsViewController *settingsVC = [[SettingsViewController alloc] init];
+    ^~~~~~~~~~~~~~~~~~~~~~
+    UIPageViewController
+/var/jb/theos/sdks/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPageViewController.h:51:12: note: 'UIPageViewController' declared here
+@interface UIPageViewController : UIViewController {
+           ^
+FileListViewController.m:299:44: error: unknown receiver 'SettingsViewController'; did you mean 'UIPageViewController'?
+    SettingsViewController *settingsVC = [[SettingsViewController alloc] init];
+                                           ^~~~~~~~~~~~~~~~~~~~~~
+                                           UIPageViewController
+/var/jb/theos/sdks/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPageViewController.h:51:12: note: 'UIPageViewController' declared here
+@interface UIPageViewController : UIViewController {
+           ^
+FileListViewController.m:300:16: error: property 'fileListVC' not found on object of type 'UIPageViewController *'
+    settingsVC.fileListVC = self;
+               ^
+3 errors generated.

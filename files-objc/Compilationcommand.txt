@@ -1,0 +1,65 @@
+clang -fobjc-arc -isysroot /var/jb/theos/sdks/iPhoneOS.sdk \
+-target arm64-apple-ios15.0 \
+main.m AppDelegate.m FileItem.m FileListViewController.m FavoritesManager.m \
+SettingsViewController.m AboutViewController.m UpdateLogViewController.m 5.c \
+-framework UIKit -framework Foundation -framework CoreGraphics \
+-o ADFiles-objc
+
+編譯命令 -- 新的 -- 舊的
+clang -fobjc-arc -isysroot /var/jb/theos/sdks/iPhoneOS.sdk \
+-target arm64-apple-ios15.0 \
+main.m AppDelegate.m FileItem.m FileListViewController.m FavoritesManager.m \
+SettingsViewController.m AboutViewController.m UpdateLogViewController.m \
+ImageViewController.m PDFViewController.m 5.c \
+-framework UIKit -framework Foundation -framework CoreGraphics -framework PDFKit \
+-o ADFiles-objc
+
+# 新的 -舊
+clang -fobjc-arc -isysroot /var/jb/theos/sdks/iPhoneOS.sdk \
+-target arm64-apple-ios15.0 \
+main.m AppDelegate.m FileItem.m FileListViewController.m FavoritesManager.m \
+SettingsViewController.m AboutViewController.m UpdateLogViewController.m \
+ImageViewController.m PDFViewController.m FileOperations.m 5.c \
+-framework UIKit -framework Foundation -framework CoreGraphics -framework PDFKit \
+-o ADFiles-objc
+
+# 新的 -- 舊的
+clang -fobjc-arc -isysroot /var/jb/theos/sdks/iPhoneOS.sdk \
+-target arm64-apple-ios15.0 \
+main.m AppDelegate.m FileItem.m FileListViewController.m FavoritesManager.m \
+SettingsViewController.m AboutViewController.m UpdateLogViewController.m \
+ImageViewController.m PDFViewController.m FileOperations.m \
+MediaViewController.m HexEditorViewController.m FilePermissionsViewController.m 5.c \
+-framework UIKit -framework Foundation -framework CoreGraphics -framework PDFKit -framework AVKit \
+-o ADFiles-objc
+
+# 最新編譯 - 舊
+clang -fobjc-arc -isysroot /var/jb/theos/sdks/iPhoneOS.sdk \
+-target arm64-apple-ios15.0 \
+main.m AppDelegate.m FileItem.m FileListViewController.m FavoritesManager.m \
+SettingsViewController.m AboutViewController.m UpdateLogViewController.m \
+ImageViewController.m PDFViewController.m FileOperations.m \
+MediaViewController.m HexEditorViewController.m FilePermissionsViewController.m 5.c \
+-framework UIKit -framework Foundation -framework CoreGraphics -framework PDFKit -framework AVKit \
+-o ADFiles-objc
+
+# 新編譯命令 - 舊
+clang -fobjc-arc -isysroot /var/jb/theos/sdks/iPhoneOS.sdk \
+-target arm64-apple-ios15.0 \
+main.m AppDelegate.m FileItem.m FileListViewController.m FavoritesManager.m \
+SettingsViewController.m AboutViewController.m UpdateLogViewController.m \
+ImageViewController.m PDFViewController.m FileOperations.m \
+MediaViewController.m HexEditorViewController.m FilePermissionsViewController.m 5.c \
+-framework UIKit -framework Foundation -framework CoreGraphics -framework PDFKit -framework AVFoundation -framework AVKit \
+-o ADFiles-objc
+
+# 編譯命令 - 新 Compile Command - New
+clang -fobjc-arc -isysroot /var/jb/theos/sdks/iPhoneOS.sdk \
+-target arm64-apple-ios15.0 \
+main.m AppDelegate.m FileItem.m FileListViewController.m FavoritesManager.m \
+SettingsViewController.m AboutViewController.m UpdateLogViewController.m \
+ImageViewController.m PDFViewController.m FileOperations.m \
+MediaViewController.m HexEditorViewController.m FilePermissionsViewController.m \
+TextEditorViewController.m 5.c \
+-framework UIKit -framework Foundation -framework CoreGraphics -framework PDFKit -framework AVFoundation -framework AVKit \
+-o ADFiles-objc

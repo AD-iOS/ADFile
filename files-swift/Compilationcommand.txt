@@ -1,0 +1,156 @@
+旧編譯命令目前棄用() {
+# 自動簽名版本
+swiftc -sdk /var/jb/theos/sdks/iPhoneOS.sdk \
+       -target arm64-apple-ios15.0 \
+       main.swift 1.swift 2.swift 3.swift 4.swift 5.swift 6.swift SettingsViewController.swift AboutViewController.swift 5.c \
+       -L/var/jb/usr/lib \
+       -lzip \
+       -Xlinker -rpath -Xlinker /var/jb/usr/lib \
+       -framework UIKit \
+       -framework Foundation \
+       -Xlinker -dead_strip \
+       -Xlinker -objc_abi_version \
+       -Xlinker 2
+    }
+
+# 不自動簽名版本
+swiftc -sdk /var/jb/theos/sdks/iPhoneOS.sdk \
+       -target arm64-apple-ios15.0 \
+       main.swift 1.swift 2.swift 3.swift 4.swift 5.swift 6.swift SettingsViewController.swift AboutViewController.swift 5.c \
+       -L/var/jb/usr/lib \
+       -lzip \
+       -Xlinker -rpath -Xlinker /var/jb/usr/lib \
+       -framework UIKit \
+       -framework Foundation \
+       -Xlinker -dead_strip
+
+# ldid -S ./main #不需要了因為發現第二個編譯命令不會自動簽名了
+    }
+
+編譯失敗的() { #這兩個是不需要的因為命令有問題
+swiftc -sdk /var/jb/theos/sdks/iPhoneOS.sdk \
+       -target arm64-apple-ios15.0 \
+       main.swift 1.swift 2.swift 3.swift 4.swift 5.swift 6.swift SettingsViewController.swift AboutViewController.swift 5.c \
+       -L./ \
+       -lzip \
+       -Xlinker -rpath -Xlinker @executable_path \
+       -Xlinker -rpath -Xlinker /var/jb/usr/lib \
+       -framework UIKit \
+       -framework Foundation \
+       -Xlinker -dead_strip
+
+swiftc -sdk /var/jb/theos/sdks/iPhoneOS.sdk \
+       -target arm64-apple-ios15.0 \
+       main.swift 1.swift 2.swift 3.swift 4.swift 5.swift 6.swift SettingsViewController.swift AboutViewController.swift 5.c \
+       -L./ \
+       -lzip \
+       -Xlinker -rpath -Xlinker @executable_path \
+       -Xlinker -rpath -Xlinker /var/jb/usr/lib \
+       -framework UIKit \
+       -framework Foundation \
+       -Xlinker -dead_strip
+}
+
+新?() {
+# 可以成功編譯的 #目前使用
+swiftc -sdk /var/jb/theos/sdks/iPhoneOS.sdk \
+       -target arm64-apple-ios15.0 \
+       main.swift 1.swift 2.swift 3.swift 4.swift 5.swift 6.swift SettingsViewController.swift AboutViewController.swift ImageViewController.swift PDFViewController.swift UpdateLogViewController.swift 5.c \
+       -L./ \
+       -lzip \
+       -Xlinker -rpath -Xlinker @executable_path \
+       -framework UIKit \
+       -framework Foundation \
+       -Xlinker -dead_strip
+
+    }
+
+# 新編譯命令 # 舊
+swiftc -sdk /var/jb/theos/sdks/iPhoneOS.sdk \
+       -target arm64-apple-ios15.0 \
+       main.swift 1.swift 2.swift 3.swift 4.swift 5.swift 6.swift SettingsViewController.swift AboutViewController.swift ImageViewController.swift PDFViewController.swift UpdateLogViewController.swift 5.c \
+       -L./ \
+       -lzip \
+       -Xlinker -rpath -Xlinker @executable_path \
+       -framework UIKit \
+       -framework Foundation \
+       -Xlinker -dead_strip
+    }
+
+# 新編譯命令 -- 最新 -- 廢棄掉因為引用了錯誤的庫文件
+swiftc -sdk /var/jb/theos/sdks/iPhoneOS.sdk \
+       -target arm64-apple-ios15.0 \
+       main.swift 1.swift 2.swift 3.swift 4.swift 5.swift 6.swift \
+       SettingsViewController.swift AboutViewController.swift \
+       ImageViewController.swift PDFViewController.swift UpdateLogViewController.swift \
+       MediaViewController.swift HexEditorViewController.swift 5.c \
+       -L./ \
+       -lzip \
+       -Xlinker -rpath -Xlinker @executable_path \
+       -framework UIKit \
+       -framework Foundation \
+       -framework AVKit \
+       -framework PDFKit \
+       -Xlinker -dead_strip
+    }
+
+# 新 -- 不是引用當前目錄的動態庫
+swiftc -sdk /var/jb/theos/sdks/iPhoneOS.sdk \
+       -target arm64-apple-ios15.0 \
+       main.swift 1.swift 2.swift 3.swift 4.swift 5.swift 6.swift \
+       SettingsViewController.swift AboutViewController.swift \
+       ImageViewController.swift PDFViewController.swift UpdateLogViewController.swift \
+       MediaViewController.swift HexEditorViewController.swift 5.c \
+       -L./ \
+       -lzip \
+       -Xlinker -rpath -Xlinker @executable_path \
+       -framework UIKit \
+       -framework Foundation \
+       -Xlinker -dead_strip
+    }
+
+# 新的 -- 舊了
+swiftc -sdk /var/jb/theos/sdks/iPhoneOS.sdk \
+       -target arm64-apple-ios15.0 \
+       main.swift 1.swift 2.swift 3.swift 4.swift 5.swift 6.swift \
+       SettingsViewController.swift AboutViewController.swift \
+       ImageViewController.swift PDFViewController.swift UpdateLogViewController.swift \
+       MediaViewController.swift HexEditorViewController.swift 5.c \
+       -L. \
+       -lzip \
+       -Xlinker -rpath -Xlinker @executable_path \
+       -framework UIKit \
+       -framework Foundation \
+       -Xlinker -dead_strip
+    }
+}
+
+# 新的編譯命令 -- 舊
+swiftc -sdk /var/jb/theos/sdks/iPhoneOS.sdk \
+       -target arm64-apple-ios15.0 \
+       main.swift 1.swift 2.swift 3.swift 4.swift 5.swift 6.swift \
+       SettingsViewController.swift AboutViewController.swift \
+       ImageViewController.swift PDFViewController.swift UpdateLogViewController.swift \
+       MediaViewController.swift HexEditorViewController.swift 5.c \
+       -L. \
+       -lzip \
+       -Xlinker -rpath -Xlinker @executable_path \
+       -framework UIKit \
+       -framework Foundation \
+       -Xlinker -dead_strip && install_name_tool -change @rpath/libzip.5.dylib @executable_path/libzip.5.dylib main && otool -L main | grep libzip >Mistake.1.txt
+
+
+# Compile command — new
+swiftc -sdk /var/jb/theos/sdks/iPhoneOS.sdk \
+       -target arm64-apple-ios15.0 \
+       main.swift 1.swift 2.swift 3.swift 4.swift 5.swift 6.swift \
+       SettingsViewController.swift AboutViewController.swift \
+       ImageViewController.swift PDFViewController.swift UpdateLogViewController.swift \
+       MediaViewController.swift HexEditorViewController.swift \
+       FilePermissionsViewController.swift FavoritesManager.swift 5.c \
+       -L. \
+       -lzip \
+       -Xlinker -rpath -Xlinker @executable_path \
+       -framework UIKit \
+       -framework Foundation \
+       -Xlinker -dead_strip

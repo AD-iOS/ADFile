@@ -1,0 +1,3 @@
+libiosexec.1.dylib:
+	@rpath/libiosexec.1.dylib (compatibility version 0.0.0, current version 0.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1336.62.1)

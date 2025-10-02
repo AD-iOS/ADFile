@@ -1,0 +1,9 @@
+libzip.dylib:
+	@rpath/libzip.5.dylib (compatibility version 5.0.0, current version 5.5.0)
+	@rpath/libiosexec.1.dylib (compatibility version 0.0.0, current version 0.0.0)
+	/usr/lib/libbz2.1.0.dylib (compatibility version 1.0.0, current version 1.0.8)
+	@rpath/liblzma.5.dylib (compatibility version 8.0.0, current version 8.8.0)
+	@rpath/libzstd.1.dylib (compatibility version 1.0.0, current version 1.5.2)
+	@rpath/libcrypto.3.dylib (compatibility version 3.0.0, current version 3.0.0)
+	/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.11)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1319.0.0)

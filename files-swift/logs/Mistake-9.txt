@@ -1,0 +1,6 @@
+1.swift:123:6: error: invalid redeclaration of 'showSuccessAlert(message:)'
+func showSuccessAlert(message: String) {
+     ^
+5.swift:54:10: note: 'showSuccessAlert(message:)' previously declared here
+    func showSuccessAlert(message: String) {
+         ^

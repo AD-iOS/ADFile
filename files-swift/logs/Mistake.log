@@ -1,0 +1,18 @@
+1.swift:189:27: error: cannot find 'MediaViewController' in scope
+        let mediaPlayer = MediaViewController()
+                          ^~~~~~~~~~~~~~~~~~~
+1.swift:196:25: error: cannot find 'HexEditorViewController' in scope
+        let hexEditor = HexEditorViewController()
+                        ^~~~~~~~~~~~~~~~~~~~~~~
+
+1.swift:189:27：错误：在范围内找不到“MediaViewController”
+
+让mediaPlayer = MediaViewController（）
+
+^~~~~~~~~~~~~~~~~~~
+
+1.swift：196:25：错误：无法在范围内找到“HexEditorViewController”
+
+让hexEditor = HexEditorViewController（）
+
+^~~~~~~~~~~~~~~~~~~~~~~

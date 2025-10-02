@@ -1,0 +1,12 @@
+3.swift:72:42: error: missing argument label 'fileItem:' in call
+                self.showFilePermissions(fileItem)
+                                         ^
+                                         fileItem: 
+
+3.swift:72:42：错误：调用中缺少参数标签“fileItem:”
+
+self.showFilePermissions（文件项目）
+
+^
+
+文件项目：

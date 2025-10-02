@@ -1,0 +1,12 @@
+FileListViewController.m:223:9: warning: 'UI_USER_INTERFACE_IDIOM' is deprecated: first deprecated in iOS 13.0 - Use -[UIDevice userInterfaceIdiom] directly. [-Wdeprecated-declarations]
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        ^
+/var/jb/theos/sdks/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h:99:36: note: 'UI_USER_INTERFACE_IDIOM' has been explicitly marked deprecated here
+static inline UIUserInterfaceIdiom UI_USER_INTERFACE_IDIOM(void) API_DEPRECATED("Use -[UIDevice userInterfaceIdiom] directly.", ios(2.0, 13.0), tvos(9.0, 11.0)) {
+                                   ^
+1 warning generated.
+Undefined symbols for architecture arm64:
+  "_CGRectZero", referenced from:
+      -[FileListViewController openWithSystemApp:] in FileListViewController-8f4e85.o
+ld: symbol(s) not found for architecture arm64
+clang-16: error: linker command failed with exit code 1 (use -v to see invocation)

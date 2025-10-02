@@ -1,0 +1,6 @@
+ImageViewController.swift:26:13: error: cannot find 'showErrorAlert' in scope
+            showErrorAlert(message: "无法加载图片")
+
+ImageViewController.swift:26:13：错误：在范围内找不到“showErrorAlert”
+
+showErrorAlert（消息：“无法加载图片”）

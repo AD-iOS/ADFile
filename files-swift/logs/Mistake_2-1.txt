@@ -1,0 +1,6 @@
+5.swift:11:17: error: cannot find 'execute_zip' in scope
+                execute_zip(item.isDirectory ? 1 : 0, sourcePtr, destPtr)
+                ^~~~~~~~~~~
+5.swift:29:17: error: cannot find 'execute_unzip' in scope
+                execute_unzip(sourcePtr, destPtr)
+                ^~~~~~~~~~~~~

@@ -1,0 +1,14 @@
+5.swift:22:20: error: cannot find 'Process' in scope
+        let task = Process()
+                   ^~~~~~~
+5.swift:61:20: error: cannot find 'Process' in scope
+        let task = Process()
+                   ^~~~~~~
+5.swift:90:21: error: cannot find 'UIAlertController' in scope
+        let alert = UIAlertController(title: "成功", message: message, preferredStyle: .alert)
+5.swift:90:91: error: cannot infer contextual base in reference to member 'alert'
+        let alert = UIAlertController(title: "成功", message: message, preferredStyle: .alert)
+5.swift:91:25: error: cannot find 'UIAlertAction' in scope
+        alert.addAction(UIAlertAction(title: "确定", style: .default))
+5.swift:91:64: error: cannot infer contextual base in reference to member 'default'
+        alert.addAction(UIAlertAction(title: "确定", style: .default))

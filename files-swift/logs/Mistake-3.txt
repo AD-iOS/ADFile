@@ -1,0 +1,6 @@
+5.swift:6:6: error: expected '{' in body of function declaration
+func execute_zip(_ is_directory: Int32, _ source: UnsafePointer<CChar>?, _ dest: UnsafePointer<CChar>?) -> Int32
+     ^
+5.swift:9:6: error: expected '{' in body of function declaration
+func execute_unzip(_ zip_path: UnsafePointer<CChar>?, _ extract_path: UnsafePointer<CChar>?) -> Int32
+     ^

@@ -1,0 +1,28 @@
+FilePermissionsViewController.m:111:9: error: cannot jump from switch statement to this case label
+        default:
+        ^
+FilePermissionsViewController.m:107:39: note: jump enters lifetime of block which strongly captures a variable
+            cell.textFieldDidChange = ^(NSString *text) {
+                                      ^
+FilePermissionsViewController.m:99:39: note: jump enters lifetime of block which strongly captures a variable
+            cell.textFieldDidChange = ^(NSString *text) {
+                                      ^
+FilePermissionsViewController.m:91:39: note: jump enters lifetime of block which strongly captures a variable
+            cell.textFieldDidChange = ^(NSString *text) {
+                                      ^
+FilePermissionsViewController.m:103:9: error: cannot jump from switch statement to this case label
+        case 2:
+        ^
+FilePermissionsViewController.m:99:39: note: jump enters lifetime of block which strongly captures a variable
+            cell.textFieldDidChange = ^(NSString *text) {
+                                      ^
+FilePermissionsViewController.m:91:39: note: jump enters lifetime of block which strongly captures a variable
+            cell.textFieldDidChange = ^(NSString *text) {
+                                      ^
+FilePermissionsViewController.m:95:9: error: cannot jump from switch statement to this case label
+        case 1:
+        ^
+FilePermissionsViewController.m:91:39: note: jump enters lifetime of block which strongly captures a variable
+            cell.textFieldDidChange = ^(NSString *text) {
+                                      ^
+3 errors generated.

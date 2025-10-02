@@ -1,0 +1,12 @@
+libzstd.1.dylib:
+	@rpath/libzstd.1.dylib (compatibility version 1.0.0, current version 1.5.5)
+	@rpath/libiosexec.1.dylib (compatibility version 0.0.0, current version 0.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1336.62.1)
+libzstd.dylib:
+	@rpath/libzstd.1.dylib (compatibility version 1.0.0, current version 1.5.5)
+	@rpath/libiosexec.1.dylib (compatibility version 0.0.0, current version 0.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1336.62.1)
+libzstd.1.5.5.dylib:
+	@rpath/libzstd.1.dylib (compatibility version 1.0.0, current version 1.5.5)
+	@rpath/libiosexec.1.dylib (compatibility version 0.0.0, current version 0.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1336.62.1)

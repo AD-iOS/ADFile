@@ -1,0 +1,6 @@
+FilePermissionsViewController.swift:62:25: error: cannot find 'Process' in scope
+        let chmodTask = Process()
+                        ^~~~~~~
+FilePermissionsViewController.swift:66:25: error: cannot find 'Process' in scope
+        let chownTask = Process()
+                        ^~~~~~~

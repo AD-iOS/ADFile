@@ -1,0 +1,6 @@
+libintl.8.dylib:
+	@rpath/libintl.8.dylib (compatibility version 12.0.0, current version 12.0.0)
+	/usr/lib/libiconv.2.dylib (compatibility version 7.0.0, current version 7.0.0)
+	@rpath/libiosexec.1.dylib (compatibility version 0.0.0, current version 0.0.0)
+	/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (compatibility version 150.0.0, current version 1953.255.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1319.0.0)

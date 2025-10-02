@@ -1,0 +1,8 @@
+bash:
+	@rpath/libiosexec.1.dylib (compatibility version 0.0.0, current version 0.0.0)
+	@rpath/libreadline.8.dylib (compatibility version 8.2.0, current version 8.2.0)
+	@rpath/libhistory.8.dylib (compatibility version 8.2.0, current version 8.2.0)
+	@rpath/libncursesw.6.dylib (compatibility version 6.0.0, current version 6.0.0)
+	/usr/lib/libiconv.2.dylib (compatibility version 7.0.0, current version 7.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1336.62.1)
+	/usr/lib/libcharset.1.dylib (compatibility version 1.0.0, current version 1.0.0)

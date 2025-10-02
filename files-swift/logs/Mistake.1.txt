@@ -1,0 +1,1 @@
+	@loader_path/libzip.dylib (compatibility version 5.0.0, current version 5.5.0)

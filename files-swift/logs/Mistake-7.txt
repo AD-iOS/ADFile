@@ -1,0 +1,83 @@
+FavoritesManager.swift:41:25: error: cannot find 'UIBarButtonItem' in scope
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showCreateMenu))
+                        ^~~~~~~~~~~~~~~
+FavoritesManager.swift:41:100: error: 'showCreateMenu' is inaccessible due to 'private' protection level
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showCreateMenu))
+                                                                                                   ^
+1.swift:221:24: note: 'showCreateMenu()' declared here
+    @objc private func showCreateMenu() {
+                       ^
+FavoritesManager.swift:41:63: error: cannot infer contextual base in reference to member 'add'
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showCreateMenu))
+                                                             ~^~~
+FavoritesManager.swift:42:30: error: cannot find 'UIBarButtonItem' in scope
+        let favoriteButton = UIBarButtonItem(image: UIImage(systemName: "star"), style: .plain, target: self, action: #selector(showFavorites))
+                             ^~~~~~~~~~~~~~~
+FavoritesManager.swift:42:53: error: cannot find 'UIImage' in scope
+        let favoriteButton = UIBarButtonItem(image: UIImage(systemName: "star"), style: .plain, target: self, action: #selector(showFavorites))
+                                                    ^~~~~~~
+FavoritesManager.swift:42:90: error: cannot infer contextual base in reference to member 'plain'
+        let favoriteButton = UIBarButtonItem(image: UIImage(systemName: "star"), style: .plain, target: self, action: #selector(showFavorites))
+                                                                                        ~^~~~~
+FavoritesManager.swift:43:30: error: cannot find 'UIBarButtonItem' in scope
+        let settingsButton = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .plain, target: self, action: #selector(showSettings))
+                             ^~~~~~~~~~~~~~~
+FavoritesManager.swift:43:53: error: cannot find 'UIImage' in scope
+        let settingsButton = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .plain, target: self, action: #selector(showSettings))
+                                                    ^~~~~~~
+FavoritesManager.swift:43:129: error: 'showSettings' is inaccessible due to 'private' protection level
+        let settingsButton = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .plain, target: self, action: #selector(showSettings))
+                                                                                                                                ^
+1.swift:237:24: note: 'showSettings()' declared here
+    @objc private func showSettings() {
+                       ^
+FavoritesManager.swift:43:90: error: cannot infer contextual base in reference to member 'plain'
+        let settingsButton = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .plain, target: self, action: #selector(showSettings))
+                                                                                        ~^~~~~
+FavoritesManager.swift:53:33: error: cannot find 'UIImage' in scope
+        favoriteButton?.image = UIImage(systemName: isFavorited ? "star.fill" : "star")
+                                ^~~~~~~
+FavoritesManager.swift:62:25: error: cannot find 'UIAlertController' in scope
+            let alert = UIAlertController(title: "收藏目录", message: "选择操作", preferredStyle: .actionSheet)
+FavoritesManager.swift:62:108: error: cannot infer contextual base in reference to member 'actionSheet'
+            let alert = UIAlertController(title: "收藏目录", message: "选择操作", preferredStyle: .actionSheet)
+FavoritesManager.swift:64:29: error: cannot find 'UIAlertAction' in scope
+            alert.addAction(UIAlertAction(title: "取消收藏", style: .destructive) { _ in
+FavoritesManager.swift:64:74: error: cannot infer contextual base in reference to member 'destructive'
+            alert.addAction(UIAlertAction(title: "取消收藏", style: .destructive) { _ in
+FavoritesManager.swift:68:29: error: cannot find 'UIAlertAction' in scope
+            alert.addAction(UIAlertAction(title: "管理收藏", style: .default) { _ in
+FavoritesManager.swift:68:74: error: cannot infer contextual base in reference to member 'default'
+            alert.addAction(UIAlertAction(title: "管理收藏", style: .default) { _ in
+FavoritesManager.swift:72:29: error: cannot find 'UIAlertAction' in scope
+            alert.addAction(UIAlertAction(title: "取消", style: .cancel))
+FavoritesManager.swift:72:68: error: cannot infer contextual base in reference to member 'cancel'
+            alert.addAction(UIAlertAction(title: "取消", style: .cancel))
+FavoritesManager.swift:82:21: error: cannot find 'UIAlertController' in scope
+        let alert = UIAlertController(title: "添加收藏", message: "为当前目录设置一个名称", preferredStyle: .alert)
+FavoritesManager.swift:82:125: error: cannot infer contextual base in reference to member 'alert'
+        let alert = UIAlertController(title: "添加收藏", message: "为当前目录设置一个名称", preferredStyle: .alert)
+FavoritesManager.swift:88:25: error: cannot find 'UIAlertAction' in scope
+        alert.addAction(UIAlertAction(title: "添加", style: .default) { _ in
+FavoritesManager.swift:88:64: error: cannot infer contextual base in reference to member 'default'
+        alert.addAction(UIAlertAction(title: "添加", style: .default) { _ in
+FavoritesManager.swift:94:25: error: cannot find 'UIAlertAction' in scope
+        alert.addAction(UIAlertAction(title: "取消", style: .cancel))
+FavoritesManager.swift:94:64: error: cannot infer contextual base in reference to member 'cancel'
+        alert.addAction(UIAlertAction(title: "取消", style: .cancel))
+FavoritesManager.swift:115:21: error: cannot find 'UIAlertController' in scope
+        let alert = UIAlertController(title: "收藏目录", message: nil, preferredStyle: .actionSheet)
+FavoritesManager.swift:115:71: error: 'nil' requires a contextual type
+        let alert = UIAlertController(title: "收藏目录", message: nil, preferredStyle: .actionSheet)
+FavoritesManager.swift:115:93: error: cannot infer contextual base in reference to member 'actionSheet'
+        let alert = UIAlertController(title: "收藏目录", message: nil, preferredStyle: .actionSheet)
+FavoritesManager.swift:118:29: error: cannot find 'UIAlertAction' in scope
+            alert.addAction(UIAlertAction(title: "\(name) - \(path)", style: .default) { _ in
+                            ^~~~~~~~~~~~~
+FavoritesManager.swift:118:79: error: cannot infer contextual base in reference to member 'default'
+            alert.addAction(UIAlertAction(title: "\(name) - \(path)", style: .default) { _ in
+                                                                             ~^~~~~~~
+FavoritesManager.swift:123:25: error: cannot find 'UIAlertAction' in scope
+        alert.addAction(UIAlertAction(title: "取消", style: .cancel))
+FavoritesManager.swift:123:64: error: cannot infer contextual base in reference to member 'cancel'
+        alert.addAction(UIAlertAction(title: "取消", style: .cancel))

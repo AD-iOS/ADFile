@@ -1,0 +1,2 @@
+ld: library not found for -lzip
+<unknown>:0: error: link command failed with exit code 1 (use -v to see invocation)

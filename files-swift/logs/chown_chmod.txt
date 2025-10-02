@@ -1,0 +1,12 @@
+chown:
+	@rpath/libiosexec.1.dylib (compatibility version 0.0.0, current version 0.0.0)
+	@rpath/libintl.8.dylib (compatibility version 12.0.0, current version 12.0.0)
+	/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (compatibility version 150.0.0, current version 2202.0.0)
+	/System/Library/Frameworks/CoreServices.framework/CoreServices (compatibility version 1.0.0, current version 1226.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1336.62.1)
+chmod:
+	@rpath/libiosexec.1.dylib (compatibility version 0.0.0, current version 0.0.0)
+	@rpath/libintl.8.dylib (compatibility version 12.0.0, current version 12.0.0)
+	/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (compatibility version 150.0.0, current version 2202.0.0)
+	/System/Library/Frameworks/CoreServices.framework/CoreServices (compatibility version 1.0.0, current version 1226.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1336.62.1)
