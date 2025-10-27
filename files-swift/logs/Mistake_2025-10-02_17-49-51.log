@@ -1,0 +1,2 @@
+ld: warning: ignoring file 5.c, building for iOS-arm64 but attempting to link with file built for unknown-unsupported file format ( 0x2F 0x2F 0x20 0x35 0x2E 0x63 0x20 0x2D 0x20 0xE4 0xBF 0xAE 0xE5 0xA4 0x8D 0xE7 )
+ld: warning: dylib (./libzip.dylib) was built for newer iOS version (16.0) than being linked (15.0)
